@@ -15,6 +15,6 @@ self.end_with?("!")
   end
 
   def count_sentences
-self.count(/\w[.+!+?+]\W/)
+self.find(/\w[.+!+?+]\W/).size
   end
 end
